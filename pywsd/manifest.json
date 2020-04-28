@@ -1,0 +1,18 @@
+{
+    "manifest_version": "1",
+    "name": "PyWSD",
+    "version": "3.9.2",
+    "keyname": "pywsd",
+    "description": "Python Implementations of Word Sense Disambiguation (WSD) Technologies.",
+    "site": "https://github.com/alvations/pywsd",
+    "author": "RodriguesFAS",
+    "category": "nlp",
+    "license": "MIT",
+    "analysis": [{
+        "semantic": [{
+            "name": "WSD",
+            "keyname": "wsd",
+            "description": ""
+        }]
+    }]
+}
