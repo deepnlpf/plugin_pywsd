@@ -1,2 +1,2 @@
-# Install Stanza NLP
-pip install stanza -U
+# Install SupWSD
+pip install supwsd
