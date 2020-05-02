@@ -1,2 +1,2 @@
 # Install SupWSD
-pip install supwsd
+pip install -U pywsd
