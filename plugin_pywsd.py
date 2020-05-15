@@ -20,7 +20,7 @@ class Plugin(IPlugin):
         if "wsd" in self._pipeline:
             option['wsd'] = Boost().multithreading(self.wsd, self._document['sentences'])
 
-        return self.out_format(option['wsd'])
+        return option['wsd']
 
     def wrapper(self):
         pass
@@ -66,10 +66,4 @@ class Plugin(IPlugin):
         return answer.definition()
 
     def out_format(self, annotation):
-        return OutputFormat().doc_annotation(
-            _id_pool=self._id_pool,
-            _id_dataset=self._document['_id_dataset'],
-            _id_document=self._document['_id'],
-            tool="pywsd",
-            annotation=annotation
-        )
+        pass
